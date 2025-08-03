@@ -10,10 +10,10 @@ A full stack web application built for managing intern registration, donations, 
 ![Login](screenshot/login.png.png)
 
 ### 📊 Dashboard
-![Dashboard](screenshots/dashboard.png.png)
+![Dashboard](screenshot/dashboard.png.png)
 
 ### 🏆 Leaderboard
-![Leaderboard](screenshots/leaderboard.png.png)
+![Leaderboard](screenshot/leaderboard.png.png)
 
 > Screenshots are located in the `screenshots/` folder of this repository.
 
@@ -37,5 +37,6 @@ A full stack web application built for managing intern registration, donations, 
 1. Clone this repository:
    ```bash
    git clone https://github.com/sksjanibaba/intern-fundraising-portal.git
+
 
 
