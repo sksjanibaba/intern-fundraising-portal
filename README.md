@@ -1,6 +1,6 @@
 # 🌟 Intern Fundraising Portal
 
-A full stack web application built for managing intern registration, donations, and leaderboard tracking.
+A full stack web application built for managing intern user, donations, and leaderboard tracking.
 
 ---
 
@@ -13,7 +13,7 @@ A full stack web application built for managing intern registration, donations, 
 ![Dashboard](screenshot/dashboard.png.png)
 
 ### 🏆 Leaderboard
-![Leaderboard](screenshot/leaderboard.png.png)
+![Leaderboard](screenshot/leadership.png.png)
 
 > Screenshots are located in the `screenshots/` folder of this repository.
 
@@ -37,6 +37,7 @@ A full stack web application built for managing intern registration, donations, 
 1. Clone this repository:
    ```bash
    git clone https://github.com/sksjanibaba/intern-fundraising-portal.git
+
 
 
 
