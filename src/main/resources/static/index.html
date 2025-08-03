@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Intern Dashboard</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f7f8;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #2c3e50;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    #donations {
+        font-weight: bold;
+        color: #27ae60;
+    }
+
+    h3 {
+        margin-top: 30px;
+        color: #2c3e50;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        background: #ecf0f1;
+        padding: 10px;
+        margin: 5px 0;
+        border-left: 6px solid #2980b9;
+        border-radius: 4px;
+    }
+
+    a {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        color: #2980b9;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body onload="loadDashboard()">
+<h1>Welcome to Intern Dashboard</h1>
+<p>Name: <span id="name"></span></p>
+<p>Referral Code: <span id="refferalCode"></span></p>
+<p>Total Donations: ₹<span id="donations"></span></p>
+
+<h3>Rewards</h3>
+<ul>
+  <li>🎉 5 Donations – Sticker</li>
+  <li>🎁 10 Donations – T-Shirt</li>
+  <li>🔒 20 Donations – Hoodie</li>
+</ul>
+
+<a href="/leaderboard">View Leaderboard</a>
+
+<script>
+  function loadDashboard() {
+      fetch("/user")
+          .then(res => res.json())
+          .then(data => {
+              document.getElementById("name").innerText = data.name;
+              document.getElementById("refferalCode").innerText = data.refferalCode;
+              document.getElementById("donations").innerText = data.donations;
+          });
+  }
+</script>
+</body>
+</html>
